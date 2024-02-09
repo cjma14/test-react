@@ -365,10 +365,6 @@ body {
     height: 12rem !important;
 }
 
-.col-span-2 {
-    grid-column: span 2;
-}
-
 .contact__condition {
     font-size: 1.3rem;
     text-align: center;
@@ -376,179 +372,87 @@ body {
 }
 
 
-.btnSecondCard {
-    margin-top: 5%;
-    border-radius: 10px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 36px;
-    padding-right: 36px;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-
+.news {
+    min-height: 100vh;
+    padding-bottom: 10rem;
+    background-image: url('../assets/Pic6.png');
+    background-color: #f5f6fa;
+    background-size: cover;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
 }
 
-.threeCard {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: #3FFA53;
-    justify-content: center;
-    gap: 15%;
-    max-height: 480px;
-}
-
-.threeCardContent {
-    width: 35%;
-}
-
-.textCardThree {
-    font-size: 48px;
-    color: white;
-    padding: 16px;
-    font-weight: bold;
-
-}
-
-.btnThreeCard {
-    margin-top: 16px;
-    border-radius: 10px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 24px;
-    padding-right: 24px;
-    color: black;
-    background-color: white;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    width: 100%;
-}
-
-.btnThreeCard2 {
-    margin-top: 16px;
-    border-radius: 10px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 24px;
-    padding-right: 24px;
-    color: white;
-    background-color: transparent;
-    border-color: white;
-    font-size: 16px;
-    font-weight: bold;
-    width: 100%;
-
-}
-
-.threeCardImage {
-    object-fit: fill;
-    width: 35%;
-}
-
-.fourCard {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.fourCardContent {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 15%
-}
-
-.fourCardFile {
+.news__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding-left: 80px;
+    padding-top: 9rem;
+    padding-right: 2rem;
 }
 
-.btnFourCard {
-    padding: 16px;
-    border: none;
+.inventory {
+    background-image: url('../assets/patron2.png');
+    background-size: 10rem;
+    background-color: #00583f;
+    text-align: center;
     color: white;
-    background-color: #3FFA53;
-    border-radius: 10px;
-    font-size: 24px;
-    padding-left: 46px;
-    padding-right: 46px;
-    font-weight: bold;
+    padding: 80px;
 }
 
-.btnStandar {
-    padding: 16px;
-    border: none;
-    color: white;
-    background-color: #3FFA53;
-    border-radius: 10px;
-    font-size: 24px;
-    padding-left: 46px;
-    padding-right: 46px;
-    font-weight: bold;
+.inventory__list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
 }
 
-.fiveCard {
-    margin-top: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    height: 100%;
-}
 
-.formFiveCard {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 5%;
-}
-
-.inputFormBasic {
-    border: none;
-    border-radius: 10px;
-    margin: 2%;
-    height: 45px;
-    padding-left: 16px;
-}
-
-.sixCard {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    min-height: 600px;
-}
-
-.sevenCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.footer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
+    justify-items: center;
     align-items: center;
-    padding: 5%;
-    background-color: green;
+    padding: 3rem 4rem;
+
 }
 
-.menuLateral {
+.footer__text {
+    font-weight: bold;
+    text-align: center
+}
+
+.footer__logo {
+    width: 33%;
+}
+
+.media-menu {
     display: flex;
     flex-direction: column;
     gap: 10%;
     position: fixed;
-    background-color: gray;
+    background-color: #9a9a9a;
     align-items: center;
     justify-content: center;
-    height: 180px;
-    width: 30px;
     top: 150px;
     right: 0;
+    z-index: 1;
 }
 
+.media-menu__item {
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    border-bottom: 1px solid #848484;
+    padding: 15px;
+    transition: all ease 200ms;
+}
+
+.media-menu__item:hover {
+    color: #04c859;
+    
+}
 
 /* Responsive Styles for Tablet */
 @media screen and (max-width: 810px) {
@@ -652,5 +556,29 @@ body {
     .contact__form {
         grid-template-columns: 1fr;
     }
+
+    .news {
+        padding-bottom: 0
+    }
+
+    .news__content {
+        padding-left: 20px;
+        padding-top: 2rem;
+        padding-right: 20px;
+    }
+
+    .btn {
+        width: 100%;
+    }
     
+
+    .inventory {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .media-menu__item {
+        font-size: 1rem;
+        padding: 10px;
+    }
 }

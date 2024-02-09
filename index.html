@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,20 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/input-material.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Test Frontend</title>
 </head>
+
 <body>
-    <div class="menuLateral">
-        <i class="fa-brands fa-facebook" style="color: white;"></i>
-        <i class="fa-brands fa-twitter" style="color: white;"></i>
-        <i class="fa-brands fa-instagram" style="color: white;"></i>
-        <i class="fa-brands fa-youtube" style="color: white;"></i>
-        <i class="fa-brands fa-tiktok" style="color: white;"></i>
-    </div>
+    <asside class="media-menu">
+        <i class="fa-brands fa-facebook media-menu__item"></i>
+        <i class="fa-brands fa-twitter media-menu__item"></i>
+        <i class="fa-brands fa-instagram media-menu__item"></i>
+        <i class="fa-brands fa-youtube media-menu__item"></i>
+        <i class="fa-brands fa-tiktok media-menu__item"></i>
+    </asside>
     <header class="header">
         <div class="header__container">
             <div class="header__item header__item--live">
@@ -25,7 +29,7 @@
                 <img class="header__iconlive" src="assets/icons/radio-sharp.svg" alt="icon-live">
             </div>
             <div class="header__item"> Lorem ipsu dolor sit amet </div>
-            <div  class="header__item header__item--join"> 
+            <div class="header__item header__item--join">
                 <span>Join Now</span>
                 <i class="fa-regular fa-circle-play"></i>
             </div>
@@ -44,7 +48,7 @@
                     <a href="javascript:void(0)" class="navbar__link">LOREM IPSUM</a>
                     <a href="javascript:void(0)" class="navbar__link">LOREM IPSUM</a>
                 </div>
-    
+
             </nav>
             <div class="hero__container">
                 <div class="hero__content">
@@ -53,7 +57,7 @@
                     <h2 class="hero__title">LOREM IPSUM</h2>
                     <button class="btn btn--primary mt-20">WHAT IS NEXT</button>
                 </div>
-                
+
             </div>
         </section>
         <section class="stats">
@@ -75,7 +79,7 @@
                 <h4 class="stats__description">Seconds</h4>
             </article>
         </section>
-        
+
         <section class="service">
             <div class="service__content">
                 <h2 class="title-section">Lorem ipsum dolor sit amet</h2>
@@ -119,7 +123,7 @@
             </div>
             <button class="btn btn--outline mt-20">LEARN MORE</button>
         </section>
-        
+
         <section class="staff mt-20">
             <div class="staff__content pt-20">
                 <h2 class="title-section">Lorem ipsum dolor sit amet, consetetur</h2>
@@ -181,224 +185,89 @@
                             <label class="input__label">Name</label>
                             <input type="text" class="form-control form-control-lg" name="name" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label class="input__label">Surname</label>
                             <input type="text" class="form-control form-control-lg" name="Surname" required>
                         </div>
-    
+
                         <div class="form-group">
                             <label class="input__label">Phone</label>
                             <input type="text" class="form-control form-control-lg" name="phone" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label class="input__label">Email</label>
                             <input type="text" class="form-control form-control-lg" name="email" required>
                         </div>
                     </div>
-                 
+
                     <div class="contact__form-full">
                         <div class="form-group">
                             <label class="input__label">Department</label>
                             <input type="text" class="form-control form-control-lg" name="department" required>
                         </div>
-    
+
                         <div class="form-group">
                             <label class="input__label">Mensaje</label>
-                            <textarea class="form-control form-control-lg contact__message" name="mensaje" required rows="10"></textarea>
+                            <textarea class="form-control form-control-lg contact__message" name="mensaje" required
+                                rows="10"></textarea>
                         </div>
                     </div>
-                   
+
                 </form>
                 <button class="btn btn--primary">I’M IN</button>
-                <p class="contact__condition">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+                <p class="contact__condition">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
             </div>
         </section>
-
-        <!-- <div>
-            <div class="secondCard">
-                <h1 style=" font-size: 56px;">Lorem ipsum</h1>
-                <p style="width: 50%; text-align:center">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                    voluptua.
-                </p>
-                <div class="secondCardContent">
-                    <div class="card">
-                        <img src="assets\Pic2.png" alt="pic2"class="cardImage">
-                        <button class="btnCard">LOREM IPSUM</button>
-                    </div>
-                    <div class="card">
-                        <img src="assets\Pic3.png" alt="pic2"class="cardImage">
-                        <button class="btnCard">LOREM IPSUM</button>
-                    </div>
-                    <div class="card">
-                        <img src="assets\Pic4.png" alt="pic2"class="cardImage">
-                        <button class="btnCard">LOREM IPSUM</button>
-                    </div>
-                </div>
-                <button class="btnSecondCard">LEARN MORE</button>
-            </div>
-            <div class="threeCard">
-                <div class="threeCardContent">
-                    <p class="textCardThree">
-                        Lorem ipsum
-                        dolor sit
-                        amet,
-                        consetetur
-                    </p>
-                    <button class="btnThreeCard">LOREM IPSUM DOLOR SIT</button>
-                    <button class="btnThreeCard2">LOREM IPSUM DOLOR SIT AMET</button>
-                </div>
-                <img src="assets\Pic5.png" alt="pic5" class="threeCardImage">
-            </div>
-            <div class="fourCard">
-                <h1 style=" font-size: 48px; font-weight: bold;">Latest videos</h1>
-                <div class="fourCardContent">
-                    <div class="fourCardFile">
-                        <i class="fa-solid fa-play" style="position: absolute; color:white;"></i>
-                        <img src="assets\Pic1.png" alt="file" style="object-fit: cover; max-width: 250px;">
-                        <p style="margin-top:5%">
-                            Lorem ipsum dolor sit amet, consetetur
-                        </p>
-                    </div>
-                    <div class="fourCardFile">
-                        <i class="fa-solid fa-play" style="position: absolute; color:white;"></i>
-                        <img src="assets\Pic1.png" alt="file" style="object-fit: cover; max-width: 250px;">
-                        <p style="margin-top:5%">
-                            Lorem ipsum dolor sit amet, consetetur
-                        </p>
-                    </div>
-                    <div class="fourCardFile">
-                        <i class="fa-solid fa-play" style="position: absolute; color:white;"></i>
-                        <img src="assets\Pic1.png" alt="file" style="object-fit: cover; max-width: 250px;">
-                        <p style="margin-top:5%">
-                            Lorem ipsum dolor sit amet, consetetur
-                        </p>
-                    </div>
-                    <div class="fourCardFile">
-                        <i class="fa-solid fa-play" style="position: absolute; color:white;"></i>
-                        <img src="assets\Pic1.png" alt="file" style="object-fit: cover; max-width: 250px;">
-                        <p style="margin-top:5%">
-                            Lorem ipsum dolor sit amet, consetetur
-                        </p>
-                    </div>
-                    <div class="fourCardFile">
-                        <i class="fa-solid fa-play" style="position: absolute; color:white;"></i>
-                        <img src="assets\Pic1.png" alt="file" style="object-fit: cover; max-width: 250px;">
-                        <p style="margin-top:5%">
-                            Lorem ipsum dolor sit amet, consetetur
-                        </p>
-                    </div>
-                    <div class="fourCardFile">
-                        <i class="fa-solid fa-play" style="position: absolute; color:white;"></i>
-                        <img src="assets\Pic1.png" alt="file" style="object-fit: cover; max-width: 250px;">
-                        <p style="margin-top:5%">
-                            Lorem ipsum dolor sit amet, consetetur
-                        </p>
-                    </div>
-                </div>
-                <button class="btnFourCard">VIEW ALL</button>
-            </div>
-            <div class="fiveCard" >
-                <img src="assets\Join Us.png" alt="backgroun" style="position:absolute; width:100%; object-fit:fill; z-index: -1;max-height: 800px;">
-                <div class="formFiveCard">
-                    <h1 style=" font-size: 56px; font-weight: bold; color: white; margin:2%;">JOIN US</h1>
-                    <h1 style=" font-size: 16px; font-weight: bold; color: white; margin:2%;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</h1>
-                    <div style="display: flex;">
-                        <input type="text" class="inputFormBasic" placeholder="Name"  style="margin-right: 0px; width: 100%;"/>
-                        <input type="text" class="inputFormBasic" placeholder="Username" style=" width: 100%;"/>
-                    </div>
-                    <div style="display: flex;">
-                        <input type="text" class="inputFormBasic" placeholder="Phone" style="margin-right: 0px; width: 100%;"/>
-                        <input type="text" class="inputFormBasic" placeholder="Email" style=" width: 100%;"/>
-                    </div>
-                    <input type="text" class="inputFormBasic" placeholder="Departamen" />
-                    <textarea class="inputFormBasic" placeholder="Mensajse" style="height: 120px; padding-top: 16px;" ></textarea>
-                    <button class="btnStandar" style="max-width: fit-content; margin:2%; ">I’M IN</button>
-                    <p style=" font-size: 16px; font-weight: bold; color: white; margin-top:2%; margin-left: 2%; text-align: center;">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                    </p>
-                </div>
-            </div>
-            <div class="sixCard">
-                <img src="assets\Pic6.png" alt="backgroun" style="position:absolute; width:100%; object-fit:fill; z-index: -1; max-height: 600px;" />
-                <div style="width: 40%; margin-left:5%; margin-top:10%">
-                    <h1 style=" font-size: 56px;">Lorem ipsum</h1>
-                <p style="width: 25;">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+        <section class="news">
+            <div class="news__content">
+                <h2 class="title-section">Lorem ipsum dolor sit</h2>
+                <p class="contact__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore
                     magna aliquyam erat, sed diam voluptua.
                 </p>
-                <button class="btnStandar" style="margin-top:10%;">VIEW ALL</button>
-                </div>
-                
+                <button class="btn btn--primary">VIEW ALL</button>
             </div>
-            <div class="sevenCard">
-                <h1 style=" font-size: 56px; color: white;">Lorem ipsum</h1>
-                <div style="display: flex; gap: 5%;">
-                    <img src="assets\Pic7.png" alt="pci" style="object-fit:fill; width:300px; height:400px;">
-                    <img src="assets\Pic8.png" alt="pci" style="object-fit:fill; width:300px; height:400px;">
-                    <img src="assets\Pic9.png" alt="pci" style="object-fit:fill; width:300px; height:400px;">
-                </div>
-                <div  style="display: flex; margin-top: 2%; width: 100%; justify-content: center; gap: 2%;">
-                    <i class="fa-solid fa-circle" style="color: white; "></i> 
-                    <i class="fa-regular fa-circle" style="color: white;"></i>
-                    <i class="fa-regular fa-circle" style="color: white; "></i>
-                </div>
-                <button class="btnStandar" style="color: black; background-color:white; margin-top:5%">VIEW ALL</button>
-            </div>
-        </div> -->
+            <div></div>
+        </section>
 
-        
+        <section class="inventory">
+            <h2 class="title-section title-section--center">Lorem ipsum</h2>
+            <div class="inventory__list mt-20">
+                <article class="card">
+                    <img class="card__image" src="assets/Pic7.png" alt="product 1">
+                </article>
+                <article class="card">
+                    <img class="card__image" src="assets/Pic8.png" alt="product 1">
+                </article>
+                <article class="card">
+                    <img class="card__image" src="assets/Pic9.png" alt="product 1">
+                </article>
+            </div>
+            <button class="btn btn--white mt-20">VIEW ALL</button>
+        </section>
+
+
     </main>
-    <footer style="display: flex; justify-content: space-around; align-items: center; padding-top: 2%; padding-bottom: 2%;">
-        <p style="font-weight: bold; width:300px; text-align:center">
+    <footer class="footer">
+        <p class="footer__text">
             Lorem ipsum dolor sit amet, consetetur
             sadipscing elitr, sed diam nonumy eirmod
             tempor invidunt ut labore et dolore magna
-    
+
         </p>
-        <img src="assets\icongrab.png" alt="prb_header" style="object-fit: fill;height:120px; width:200px ">
-        <p style="font-weight: bold; width:200px; text-align:center">
+        <img class="footer__logo" src="assets\icongrab.png" alt="prb_header">
+        <p class="footer__text">
             All rights reserved to
             Lorem Ipsum© 2022
         </p>
     </footer>
-       
-     
-        
-        <!-- <div class="footerNav">
-            <div class="footerContenTextNav">
-                <p>Lorem ipsum dolor sit 
-                    amet, consetetur</p>
-            </div>
-            <div class="footerContenTimeNav">
-                <div class="blockTime">
-                    <span>170</span>
-                    <span class="blockSpan">days</span>
-                </div>
-                <hr class="divider">
-                <div class="blockTime">
-                    <span>13</span>
-                    <span class="blockSpan">Hour</span>
-                </div>
-                <hr class="divider">
-                <div class="blockTime">
-                    <span>39</span>
-                    <span class="blockSpan">Minutes</span>
-                </div>
-                <hr class="divider">
-                <div class="blockTime">
-                    <span>29</span>
-                    <span class="blockSpan">Seconds</span>
-                </div>
-            </div>
-        </div> -->
-    
+
+
     <script src="js/input-material.js"></script>
 
 </body>
+
 </html>
