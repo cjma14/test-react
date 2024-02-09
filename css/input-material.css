@@ -1,0 +1,147 @@
+:root {
+    --color: #9a9a9a;
+    --active-color: #03b044;
+    --error-color: #f44336;
+    --input-value-color: #202124;
+    --border-color: 1px solid #dadce0;
+    --border-color-active: 2px solid var(--active-color);
+    --default-background: #e8e7e7;
+    --btn-default-bg-color: #fff;
+    --btn-default-bgh-color: #ddd;
+    --btn-default-text-color: #333;
+    --btn-primary-bg-color: #1a73e8;
+    --btn-primary-bgh-color: #287ae6;
+    --btn-primary-boxshadow-color: 0 1px 1px 0 rgba(66, 133, 244, 0.45),
+        0 1px 3px 1px rgba(66, 133, 244, 0.3);
+    --btn-primary-text-color: #fff;
+}
+
+
+input {
+    background: var(--default-background);
+}
+
+.form-group {
+    position: relative;
+    margin: 10px 0;
+}
+
+.input__label {
+    position: absolute;
+    color: var(--color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    max-width: calc(100% - (2 * 8px));
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    left: 8px;
+    top: 13px;
+    padding: 0 8px;
+    transition: 250ms;
+    user-select: none;
+    pointer-events: none;
+}
+
+.input__label svg {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    transition: 250ms;
+}
+
+.form-group .form-control {
+    box-sizing: border-box;
+    height: 57px;
+    width: 100%;
+    border-radius: 4px;
+    color: var(--input-value-color);
+    border: var(--border-color);
+    padding: 13px 15px;
+    transition: 250ms;
+    font-size: 13px;
+}
+
+.form-group .form-control:focus {
+    outline: none;
+    border: var(--border-color-active);
+    box-shadow: none !important;
+    transition: 250ms;
+}
+
+
+.form-group.active-grey .input__label {
+    color: var(--color);
+    top: -8px;
+    background: var(--default-background);
+    font-size: 11px;
+
+    transition: 250ms;
+}
+
+.form-group.active-grey .input__label svg {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    top: 2px;
+    transition: 250ms;
+}
+
+
+.form-group.active .input__label,
+.form-group.focus .input__label {
+    display: none;
+    transition: 250ms;
+}
+
+.form-group.active .input__label,
+.form-group.focus .input__label svg {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    top: 2px;
+    transition: 250ms;
+}
+
+.form-group.active .form-control {
+    border: var(--border-color-active);
+}
+
+.form-group.error .input__label {
+    color: var(--error-color);
+    top: -8px;
+    background: var(--default-background);
+    font-size: 11px;
+    transition: 250ms;
+}
+
+.form-group.error .form-control {
+    border: 2px solid var(--error-color);
+}
+
+.form-group.focus .input__label,
+.form-group.active .input__label {
+    color: var(--active-color);
+    top: -8px;
+    background: var(--default-background);
+    font-size: 11px;
+    transition: 250ms;
+}
+
+.form-group.focus .input__label svg,
+.form-group.active .input__label svg {
+    position: relative;
+    width: 11px;
+    height: 11px;
+    top: 2px;
+    transition: 250ms;
+}
+
+.form-group.active .form-control {
+    border: 2px solid #1a73e8;
+}
+
+.form-group .form-control:read-only {
+    background-color: #fff;
+}
